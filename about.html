@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Food-Hub</title>
+    <style>
+        .container{
+            margin:auto;
+            max-width: 1200px;
+        }
+        nav{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    font-size: 30px;
+
+}
+nav h1{
+    font-size: 40px;
+    border-bottom:5px solid rgba(250,10,10,10);
+    color:black;
+    margin-block-start:1px ;
+
+
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type:none;
+    margin-inline:20px ;
+    text-decoration: none;
+    color: white;
+}
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #555;
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+ text-align: center ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: rgb(83, 3, 3);
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-image: url(./images/food1.jpg);
+  background-position:center;
+  color:white;
+  font-size: 15px;
+  font-weight:lighter;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.flex
+{
+  display: flex;  
+  justify-content: space-between;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(197, 90, 90);
+    
+   
+}
+.icon{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.circle{
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.flex-footer{
+    flex-direction: column;
+    
+}
+.img{
+    border-radius: 50%;
+    height: 300px;
+    width: 225px;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1> Food</h1>
+                <div class="menu bar">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html">Our Food</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                </div>
+                <div>
+                    <a href="./signup.html"><button class="btn">Sign up</button></a>
+                    <a href="./login.html"><button class="btn">Log IN</button></a>
+                </div> 
+        
+              </nav>
+              </header>
+        </div>
+    <div class="about-section container">
+        <h1>About Food Hub</h1>
+        <p>The FoodHub page is a vibrant online platform that caters to the culinary needs of food enthusiasts. With a vast array of mouthwatering cuisines, FoodHub provides a comprehensive hub for discovering, ordering, and exploring a diverse range of delectable food options. Whether you're craving local delicacies or seeking global flavors, FoodHub offers a seamless and convenient experience, connecting users with top-notch restaurants, home chefs, and food delivery services. Discover new culinary adventures, savor enticing dishes, and embark on a gastronomic journey with FoodHub.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row container">
+        <div class="column">
+          <div class="card">
+            <img class="img" src="./images/Bigyan.jpg" alt="Bigyan">
+            <div class="container">
+              <h2>Bigyan Acharya</h2>
+              <p class="title">Founder/Entrepreneur</p>
+              <p>As the founder of a food hub, I am  responsible for establishing the business from the ground up.</p>
+              <p>bigyan@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img class="img" src="./images/pankaj.jpg" alt="Pankaj">
+            <div class="container">
+              <h2>Pankaj Tripathi</h2>
+              <p class="title">Manager</p>
+              <p>As a food hub manager, My responsibilities include overseeing the day-to-day operations of the food hub.</p>
+              <p>pankaj@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img class="img" src="./images/ishwor.jpg" alt="Ishwor">
+            <div class="container">
+              <h2>Ishwor Acharya</h2>
+              <p class="title">Operations Director</p>
+              <p>In this role, I am responsible for the smooth functioning of all operational aspects of the food hub. </p>
+              <p>ishwor@gmail.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <footer class="container footer">
+        <div class="left">
+        <h3>About Us</h3>
+        <span>FoodHub:<br/> Connecting food lovers<br/> with diverse culinary<br/> experiences and cuisines.</span>
+        </div>
+        <div class="middle">
+            <h3>Navigate</h3>
+            <ul class="flex-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Our Food</a></li>
+                <li><a href="contact.html">contact</a></li>
+                
+            </ul>
+        </div>
+        <div class="right">
+            <h3>social medias</h3>
+            <div class="icon">
+               <a href="https://www.facebook.com/"><img class="circle" src="./images/facebook.png" alt="">Facebook</a> 
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/"><img class="circle" src="./images/2227.jpg" alt="">Instagram</a> 
+             </div>
+             <div class="icon">
+                <a href="https://www.linkedin.com/"><img class="circle" src="./images/linkedin.png" alt="">Linkedin</a> 
+             </div>
+        </div>
+            </footer>
+</body>
+</html>
